@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetInsuranceList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetInsuranceListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInsuranceListResult" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAnyType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ListItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" default="true" name="Enabled" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" default="false" name="Selected" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" default="" name="Text" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" default="" name="Value" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetOperList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetOperListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOperListResult" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTreatmentGroupList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTreatmentGroupListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTreatmentGroupListResult" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSiteList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="jsonValue" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSiteListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSiteListResult" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOldAppointments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jsonId_Num" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jsonFileNum" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OldAppointment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AppointmentTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AppointmentDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AppointmentLocation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AppointmentDay" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AppointmentOperName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Instruction" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LineCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfOldAppointment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OldAppointment" nillable="true" type="tns:OldAppointment" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetOldAppointmentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOldAppointmentsResult" type="tns:ArrayOfOldAppointment" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAvailableAppointments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="jsonOperCode" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonSiteCode" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="jsonFromDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jsonToDate" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonDay1" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonDay2" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonDay3" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonDay4" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonDay5" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonDay6" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonDay7" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AvailableAppointment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Diary_name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dtime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ddate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Diarynum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dline" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dday" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfAvailableAppointment">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AvailableAppointment" nillable="true" type="tns:AvailableAppointment" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAvailableAppointmentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAvailableAppointmentsResult" type="tns:ArrayOfAvailableAppointment" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOldAppointmentsWithInstructions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="jsonId_Num" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jsonFileNum" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOldAppointmentsWithInstructionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOldAppointmentsWithInstructionsResult" type="tns:ArrayOfOldAppointment" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupOperLinkList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetGroupOperLinkListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGroupOperLinkListResult" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFilteredAvailableAppointments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="jsonOperCode" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonSiteCode" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="jsonFromDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="jsonToDate" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonDay1" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonDay2" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonDay3" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonDay4" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonDay5" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonDay6" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonDay7" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFilteredAvailableAppointmentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFilteredAvailableAppointmentsResult" type="tns:ArrayOfAvailableAppointment" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetAppointmentConfirmationStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="jsonLineCode" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="jsonConfirmationStatus" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetAppointmentConfirmationStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetAppointmentConfirmationStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGroupMessageList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetGroupMessageListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGroupMessageListResult" type="tns:ArrayOfAnyType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="jsonDiaryNum" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="jsonDateTime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddTimeResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetInsuranceListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInsuranceList" />
+  </wsdl:message>
+  <wsdl:message name="GetInsuranceListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInsuranceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOperListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOperList" />
+  </wsdl:message>
+  <wsdl:message name="GetOperListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOperListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTreatmentGroupListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTreatmentGroupList" />
+  </wsdl:message>
+  <wsdl:message name="GetTreatmentGroupListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTreatmentGroupListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSiteListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSiteList" />
+  </wsdl:message>
+  <wsdl:message name="GetSiteListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSiteListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOldAppointmentsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOldAppointments" />
+  </wsdl:message>
+  <wsdl:message name="GetOldAppointmentsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOldAppointmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAvailableAppointmentsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAvailableAppointments" />
+  </wsdl:message>
+  <wsdl:message name="GetAvailableAppointmentsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAvailableAppointmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOldAppointmentsWithInstructionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOldAppointmentsWithInstructions" />
+  </wsdl:message>
+  <wsdl:message name="GetOldAppointmentsWithInstructionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOldAppointmentsWithInstructionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupOperLinkListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGroupOperLinkList" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupOperLinkListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGroupOperLinkListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFilteredAvailableAppointmentsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFilteredAvailableAppointments" />
+  </wsdl:message>
+  <wsdl:message name="GetFilteredAvailableAppointmentsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFilteredAvailableAppointmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetAppointmentConfirmationStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:SetAppointmentConfirmationStatus" />
+  </wsdl:message>
+  <wsdl:message name="SetAppointmentConfirmationStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:SetAppointmentConfirmationStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupMessageListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGroupMessageList" />
+  </wsdl:message>
+  <wsdl:message name="GetGroupMessageListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGroupMessageListResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTime" />
+  </wsdl:message>
+  <wsdl:message name="AddTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTimeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AppointmentsSoap">
+    <wsdl:operation name="GetInsuranceList">
+      <wsdl:input message="tns:GetInsuranceListSoapIn" />
+      <wsdl:output message="tns:GetInsuranceListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOperList">
+      <wsdl:input message="tns:GetOperListSoapIn" />
+      <wsdl:output message="tns:GetOperListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTreatmentGroupList">
+      <wsdl:input message="tns:GetTreatmentGroupListSoapIn" />
+      <wsdl:output message="tns:GetTreatmentGroupListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteList">
+      <wsdl:input message="tns:GetSiteListSoapIn" />
+      <wsdl:output message="tns:GetSiteListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOldAppointments">
+      <wsdl:input message="tns:GetOldAppointmentsSoapIn" />
+      <wsdl:output message="tns:GetOldAppointmentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableAppointments">
+      <wsdl:input message="tns:GetAvailableAppointmentsSoapIn" />
+      <wsdl:output message="tns:GetAvailableAppointmentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOldAppointmentsWithInstructions">
+      <wsdl:input message="tns:GetOldAppointmentsWithInstructionsSoapIn" />
+      <wsdl:output message="tns:GetOldAppointmentsWithInstructionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupOperLinkList">
+      <wsdl:input message="tns:GetGroupOperLinkListSoapIn" />
+      <wsdl:output message="tns:GetGroupOperLinkListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFilteredAvailableAppointments">
+      <wsdl:input message="tns:GetFilteredAvailableAppointmentsSoapIn" />
+      <wsdl:output message="tns:GetFilteredAvailableAppointmentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetAppointmentConfirmationStatus">
+      <wsdl:input message="tns:SetAppointmentConfirmationStatusSoapIn" />
+      <wsdl:output message="tns:SetAppointmentConfirmationStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupMessageList">
+      <wsdl:input message="tns:GetGroupMessageListSoapIn" />
+      <wsdl:output message="tns:GetGroupMessageListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTime">
+      <wsdl:input message="tns:AddTimeSoapIn" />
+      <wsdl:output message="tns:AddTimeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AppointmentsSoap" type="tns:AppointmentsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetInsuranceList">
+      <soap:operation soapAction="http://tempuri.org/GetInsuranceList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperList">
+      <soap:operation soapAction="http://tempuri.org/GetOperList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTreatmentGroupList">
+      <soap:operation soapAction="http://tempuri.org/GetTreatmentGroupList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteList">
+      <soap:operation soapAction="http://tempuri.org/GetSiteList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOldAppointments">
+      <soap:operation soapAction="http://tempuri.org/GetOldAppointments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableAppointments">
+      <soap:operation soapAction="http://tempuri.org/GetAvailableAppointments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOldAppointmentsWithInstructions">
+      <soap:operation soapAction="http://tempuri.org/GetOldAppointmentsWithInstructions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupOperLinkList">
+      <soap:operation soapAction="http://tempuri.org/GetGroupOperLinkList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilteredAvailableAppointments">
+      <soap:operation soapAction="http://tempuri.org/GetFilteredAvailableAppointments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetAppointmentConfirmationStatus">
+      <soap:operation soapAction="http://tempuri.org/SetAppointmentConfirmationStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupMessageList">
+      <soap:operation soapAction="http://tempuri.org/GetGroupMessageList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTime">
+      <soap:operation soapAction="http://tempuri.org/AddTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AppointmentsSoap12" type="tns:AppointmentsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetInsuranceList">
+      <soap12:operation soapAction="http://tempuri.org/GetInsuranceList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOperList">
+      <soap12:operation soapAction="http://tempuri.org/GetOperList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTreatmentGroupList">
+      <soap12:operation soapAction="http://tempuri.org/GetTreatmentGroupList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSiteList">
+      <soap12:operation soapAction="http://tempuri.org/GetSiteList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOldAppointments">
+      <soap12:operation soapAction="http://tempuri.org/GetOldAppointments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableAppointments">
+      <soap12:operation soapAction="http://tempuri.org/GetAvailableAppointments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOldAppointmentsWithInstructions">
+      <soap12:operation soapAction="http://tempuri.org/GetOldAppointmentsWithInstructions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupOperLinkList">
+      <soap12:operation soapAction="http://tempuri.org/GetGroupOperLinkList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFilteredAvailableAppointments">
+      <soap12:operation soapAction="http://tempuri.org/GetFilteredAvailableAppointments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetAppointmentConfirmationStatus">
+      <soap12:operation soapAction="http://tempuri.org/SetAppointmentConfirmationStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupMessageList">
+      <soap12:operation soapAction="http://tempuri.org/GetGroupMessageList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTime">
+      <soap12:operation soapAction="http://tempuri.org/AddTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Appointments">
+    <wsdl:port name="AppointmentsSoap" binding="tns:AppointmentsSoap">
+      <soap:address location="http://localhost:2417/WebServices/Appointments.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AppointmentsSoap12" binding="tns:AppointmentsSoap12">
+      <soap12:address location="http://localhost:2417/WebServices/Appointments.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

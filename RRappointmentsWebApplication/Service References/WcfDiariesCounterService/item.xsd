@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="UpdateRemoteDiariesReports">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="custCode" type="xs:int" />
+        <xs:element minOccurs="0" name="addData" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="progType" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRemoteDiariesReportsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateRemoteDiariesReportsResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

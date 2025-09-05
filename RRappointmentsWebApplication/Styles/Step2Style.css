@@ -1,0 +1,395 @@
+﻿body, td, th 
+{
+    /*font-family: Arial, Helvetica, sans-serif;*/
+	direction: rtl;
+}
+
+body
+{
+    background-image: url('../images/pages_bg.gif');
+    background-repeat: repeat-x;
+    background-color: #d4d4d4;  /*#ededed;   changed juju*/
+    height: 902px;
+    color: #666666; /*added juju*/
+}
+
+.generalFontStyle
+{
+    font-family:David;
+    font-weight:bold;
+    direction: rtl;
+}
+
+.continueButtonSyle
+{
+    visibility:hidden;
+    margin-right: 0px;
+}
+
+.textSearchStyle
+{
+    border-style: solid;
+    border-color: #666666;/*Green;  changed juju*/ 
+}
+
+.waterMarkStyle
+{
+    color: #CC0000;
+}
+
+/*a:link 
+{
+    text-decoration: none;
+    color: #315781;
+}
+
+a:visited 
+{
+	text-decoration: none;
+	color: #315781;
+}
+
+a:hover 
+{
+	text-decoration: none;
+	color: #00F;
+}
+
+a:active 
+{
+	text-decoration: none;
+	color: #00F;
+}*/
+/*---------------------------------start  juju---------------------------
+a:link, a:visited
+{
+    text-decoration: none;
+    color: #006666; 
+}
+a:hover, a:active
+{
+    text-decoration: none;
+    color: #009999; 
+}*/
+/*-------------------------end   juju-----------------------------*/
+.style4
+{
+}
+
+.style5
+{
+    height: 36px;
+    text-align: center;
+}
+
+.style8
+{
+    width: 136px;
+    height: 36px;
+}
+
+.style9
+{
+    height: 33px;
+}
+
+.style10
+{
+    width: 222px;
+    height: 40px;   /*33px   juju*/
+}
+
+.style11
+{
+    width: 613px;
+    height: 33px;
+}
+
+.style12
+{
+    width: 136px;
+    height: 33px;
+}
+
+.style13
+{
+    height: 45px;
+}
+
+
+.style14
+{
+    width: 222px;
+    height: 45px;
+}
+
+.style15
+{
+    width: 613px;
+    height: 45px;
+    text-align: right;
+}
+
+.style16
+{
+    width: 136px;
+    height: 45px;
+}
+        
+#form1
+{
+    /*height: 1026px;   juju*/ 
+}
+
+.style23
+{
+    width: 613px;
+    height: 11px;
+}
+
+.style24
+{
+    width: 136px;
+    height: 11px;
+}
+
+.style31
+{
+    width: 40px;
+}
+
+.style32
+{
+    height: 29px;
+    width: 644px;
+}
+
+.style33
+{
+    width: 417px;
+}
+
+.style35
+{
+    width: 236px;
+}
+
+.style36
+{
+    width: 232px;
+}
+ .pages_inner_frame_larger
+
+{
+
+   /*  height: auto;   10/10/2013          changed juju*/
+
+}
+.style40
+{
+    height: 40px;
+    width: 424px; 
+}
+
+.style42
+{
+    width: 149px;
+    height: 40px;
+}
+
+.style43
+{
+    width: 7px;
+    height: 40px;
+}
+
+.style44
+{
+    width: 7px;
+}
+
+.style47
+{
+    width: 424px;
+}
+
+.style48
+{
+    height: 40px;
+}
+
+.style53
+{
+    width: 149px;
+}
+
+.style54
+{
+    width: 222px;
+}
+
+.style55
+{
+    height: 11px;
+}
+
+.style56
+{
+    width: 222px;
+    height: 11px;
+}
+
+.style57
+{
+    width: 136px;
+}
+
+.style58
+{
+    color: #CC0000;  /*#FF0000;  changed juju*/
+}
+
+.style59
+{
+    text-align: center;
+}
+
+.HiddenCell
+{
+    /*visibility: hidden;*/
+    display: none;
+}
+
+#availablesAppointmentsGridView tr
+{
+   /* border-bottom:  #94332c 2px solid;
+    border-left: #94332c 2px solid;
+    border-top: #94332c 2px solid;
+    border-right: #94332c 2px solid;*/
+    border: #CCCCCC 1px solid; 
+    color:#999999;       /*changed juju*/
+    
+}
+
+#availablesAppointmentsGridView td    /*added juju*/
+{ 
+    width: 25%;
+    border: #CCCCCC 1px solid;
+}
+
+#availablesAppointmentsGridView .Pager tr   /*added juju*/
+{
+    border-style: none;    
+}
+
+#availablesAppointmentsGridView .Pager td   /*added juju*/    
+{
+    border-style: none;   
+    width: auto; 
+}
+
+ #oldAppointmentsTable
+
+{
+    width: 704px;
+    margin-left: 15px; /*added juju*/
+}
+
+#dropDownListsTable
+{
+   width: 704px;
+   height: 59px;
+}
+
+#inputDataTable
+{
+    width: 708px;
+    height: 176px;
+}
+
+#selectionMessageTable
+{
+}
+
+#nextButtonTable
+{
+    width: 100%; 
+    height: 0px;
+}
+
+#appointmentLimitTitle
+{
+    font-size: medium;
+}
+
+#appointmentLimitTitle span.style58 strong
+{
+    text-align: center;
+}
+
+#treatmentGroupDropDownList, #operDropDownList
+{
+    margin-left: 0px; 
+    margin-bottom: 0px; 
+    
+     /*-----------------------------added juju-----------------------------*/
+    border-radius: 3px;
+    border: 1px solid #666666;
+    color: #666666;  
+    cursor:pointer;
+    
+    
+}
+#treatmentGroupDropDownList.active  /*--------------to check!   juju-----------------------------*/
+{
+    border-radius: 3px;
+    border: 1px solid #666666;
+    
+}
+
+#siteDropDownList
+{
+    margin-right: 0px;
+}
+
+#selectAppointmentTiltleLabel
+{
+    visibility: visible;
+}
+
+#loaderImage
+{
+    visibility: hidden;
+}
+
+#availablesAppointmentsGridView
+{
+   margin-right: 21px;     /* juju*/
+    margin-top: 0px; 
+    visibility: visible;    
+}
+
+.Pager
+{
+    background-color: #b5b8b9; /*#82a7ff;  #284775; 4E9C9C     juju*/
+    color: White;
+    /*text-align: center;*/
+    clear: both;
+}
+
+/*.form_align --------------to check!   juju-----------------------------*/
+{
+  margin-right: 13px;
+  margin-left: auto;  
+    
+}
+
+.txtBox   /*added   juju*/
+{
+    border-radius: 3px;
+    border: 1px solid #666666;
+    color: #666666;
+    font: normal 500 14px Arial, sans-serif;
+    padding-right: 5px;
+}
+ 

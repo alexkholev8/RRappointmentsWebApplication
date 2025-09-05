@@ -1,0 +1,150 @@
+﻿body
+{
+	background-image: url(../images/pages_bg.gif);
+	background-repeat: repeat-x;
+	direction: rtl;
+	background-color: #EDEDED;
+}
+
+#mainTable
+{
+    width: 382px;
+}
+
+a:link
+{
+	color: #006;
+}
+
+a:visited 
+{
+	color: #006;
+}
+
+a:hover {
+	color: #00F;
+}
+
+a:active {
+	color: #00F;
+}
+
+#IdTextBox
+{
+    margin-left: 0px;
+}
+
+#passwordQuestionImageButton
+{
+    margin-right: 0px;
+}
+
+#UpdatePanel1 #inUpdatePanelTable
+{
+    width: 187px;   /*22px;*/    
+}
+
+#fieldInfoPopUpPanel #inPopUpPanelTable
+{
+    height: 51px;
+}
+    
+.style2
+{
+    height: 29px;
+}
+
+.style3
+{
+    width: 164px;
+}
+
+.style4
+{
+    height: 29px;
+    width: 164px;
+}
+
+.style9
+{
+    width: 127px;
+    height: 3px;
+}
+
+.style9 a
+{
+    border-style: none; 
+    padding: inherit; 
+    font-weight: bold; 
+    color: #FFFF00; 
+    text-decoration: blink;   
+}
+
+.style11
+{
+    width: 250px; /*1575px;*/
+    height: 3px;
+    font-size: medium; 
+    font-weight: bold;
+}
+
+.style13
+{
+    width: 50px; /*1575px;*/
+    height: 44px;
+    font-size: small; 
+    font-weight: bold;
+}
+
+.style14
+{
+    height: 44px;
+}
+
+.style15
+{
+    height: 3px;
+}
+
+.style17
+{
+    width: 50px; /*1575px;*/
+    height: 12px;
+    font-size: small; 
+    font-weight: bold;
+}
+
+.style18
+{
+    height: 12px;
+}
+
+.style19
+{
+    height: 33px;
+    width: 164px;
+}
+
+.style20
+{
+    height: 33px;
+}
+
+.style22
+{
+    height: 32px;
+    text-align: right;
+}
+
+.style26
+{
+    height: 32px;
+    width: 17px;
+}
+    
+.style27
+{
+    width: 153px;
+    text-align: right;
+    margin-right: 40px;
+}

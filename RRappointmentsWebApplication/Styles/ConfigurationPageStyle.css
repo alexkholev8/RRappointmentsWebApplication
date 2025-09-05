@@ -1,0 +1,709 @@
+﻿body, td, th 
+{
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    text-align: left;
+}
+
+/*a:link 
+{
+	color: #006;
+}
+
+a:visited 
+{
+	color: #006;
+}
+
+a:hover 
+{
+	color: #00F;
+}
+
+a:active 
+{
+	color: #00F;
+}*/
+/*---------------------------------start  juju---------------------------
+a:link, a:visited
+{
+    color: #006666; 
+}
+a:hover, a:active
+{
+    color: #009999; 
+}
+-------------------------end   juju-----------------------------*/
+
+body
+{
+	background-image: url(../images/pages_bg.gif);
+	background-repeat: repeat-x;
+	direction:rtl;
+	background-color: #e4e6e7;  /*#ededed;#006666   changed juju*/
+	color: #666666; /*added juju*/
+}
+/*		
+.errorLabelStyle
+{
+    visibility:hidden;
+    color:Red;
+    font-size:small;
+    font-style:normal;
+    font-weight:bold;
+}
+
+#aspnetForm
+{
+    height: 396px;
+}
+*/
+
+/* added on 01/09/2013 */
+.pages_inner_frame_large
+{
+    height: 800px; /*875px;720px; 620px;     juju*/
+   
+}
+/* end added   */
+
+#sitePropertiesTable
+{
+    width: 100%; 
+    height: 118px;    
+}
+table  /*added juju*/
+{
+    border-radius: 3px;
+    border: 1px solid #999999;
+}
+#sitePropertiesInnerTable
+{
+   /* border: 1px solid #009999; outset;medium;  changed juju*/
+    width: 95%; 
+    height: 67px;
+}
+
+#appointmentLimitCheckBox   
+{
+    text-align: right;
+}
+  
+#settingsTable
+{
+    width: 100%;
+}
+
+#settingsInnerTable
+{
+   /*border-width: medium; 
+    border-style: outset;    juju  margin-right: 0px;*/
+    width: 95%;  /*98%  changed juju*/
+   
+}
+
+#bottomPanel
+{
+   
+    margin-top: 0px; /*30px    juju*/
+    margin-left: 0px;
+    
+}
+.exitbtn
+{
+    border: 1px solid #5cb85c;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: medium;
+    background-color: #5CB85C;
+}
+
+#bottomTable
+{
+   width: 95%; 
+}
+
+.style5
+{
+    width: 771px;
+}
+
+.style6
+{
+    height: 25px;
+    width: 30%;  /*181px  changed juju*/
+    text-align: right; /*added juju*/
+}
+
+.style8
+{
+    height: 25px;
+}
+
+.style11
+{
+    width: 181px;
+}
+    
+.style12
+{
+    height: 25px;
+    width: 58px;
+}
+
+.style13
+{
+    width: 58px;
+    text-align: right; /*added juju*/
+   /* height: 20px; added juju*/
+}
+
+.style14
+{
+    width: 9px;
+}
+
+.style15
+{
+    height: 27px;
+}
+    
+.style16
+{
+    height: 27px;
+    width: 89px;
+}
+
+.style18
+{
+    width: 89px;
+    /*display: none;*/
+}
+
+.style19
+{
+    height: 27px;
+    width: 211px;
+}
+
+.style23
+{
+    width: 211px;
+}
+
+.style26
+{
+    height: 27px;
+    width: 135px;
+}
+
+.style27
+{
+}
+
+.style28
+{
+    height: 27px;
+    width: 159px;
+}
+
+.style29
+{
+}
+
+.style30
+{
+    width: 89px;
+    height: 26px;
+}
+
+.style31
+{
+    width: 211px;
+    height: 26px;
+}
+
+.style32
+{
+    height: 25px;
+    visibility: hidden;
+}
+
+#wsDISHtextBox
+{
+   visibility: hidden; 
+}
+
+#wsIPtextBox, #wsPortTextBox
+{
+    visibility: visible;
+    
+}
+
+.hiddenRow
+{
+    visibility: visible;
+}
+
+#txtWebServiceDirectory
+{
+    direction: ltr;
+   
+}
+
+.newRow
+{
+    display: none;    
+}
+
+#ddlWebServiceSyncMode
+{
+    direction: rtl;
+    display: none;
+}
+
+/* ========== added on 01/09/2013 : ========== */
+#emailConfigPanel
+{
+}
+
+.emailConfig
+{
+    border: 1px solid #999999;/*medium;5px; Blue;Red  changed juju*/ /* */
+    border-radius:3px;
+    clear: both;
+    /*margin-top: 20px;
+     margin-right: 5px;     changed juju*/
+    margin-top: 0px;
+    font-size: small;
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+#lblConfig
+{
+    font-size: 16px;
+    font-weight: bold;
+    float: right;
+    direction: rtl;
+    clear: both;
+    margin-right: 15px;
+}  
+
+.emailConfigLabel
+{
+    float: left;
+    direction: ltr;
+    width: 95px; /*50px;*/
+    margin-left: 10px;
+    text-align: left;  /*added juju*/
+}
+
+.emailConfigInput
+{
+    float: left;
+    direction: ltr;
+    margin-left: 10px;
+    width: 250px;
+    text-align: left; /*added juju*/
+}
+
+/* INSERTED ON 11/02/2020 :   */
+.emailNicknameLabel
+{
+    float: left;
+    direction: ltr;
+    width: 60px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.emailNicknameInput
+{
+    float: left;
+    direction: ltr;
+    margin-left: 10px;
+    width: 75px;
+    text-align: left;
+}
+
+#chkNickname
+{
+    position: relative;
+    direction: ltr;
+    margin-left: 5px;
+    float: left;
+    margin-right: 5px;
+}
+/* END INSERTED ON 11/02/2020 */
+
+#lblFrom
+{
+}
+
+#txtFrom
+{
+}
+
+#lblTo
+{    
+}
+
+#txtTo
+{
+    width: 500px;
+}
+
+#lblCc
+{
+}
+
+#txtFrom
+{
+}
+
+#lblSmtpServer
+{
+}
+
+#txtSmtpServer
+{
+    
+}
+
+#lblSmtpPort
+{
+    float: left;
+    width: 40px;
+    direction: ltr;
+    margin-left: 50px;
+}
+
+#txtSmtpPort
+{
+    float: left;
+    width: 60px;
+    direction: ltr;
+    margin-left: 5px;
+}
+
+#chkSSL
+{
+    position: relative;
+    direction: ltr;
+    margin-left: 10px;
+    float: left;
+    margin-right: 5px;
+   
+}
+
+.SSL                /*added juju*/
+{
+    float: left;
+    width: 120px;
+    margin-right: 10px;
+    margin-left: 10px;
+    vertical-align: bottom;
+    text-align: left;
+}
+
+.Encryption
+{
+    margin-left: 10px;
+    float: left; 
+    width: 300px;
+    display: none;
+}
+
+#chkEncrypt
+{
+    float: left;
+    direction: ltr;
+    display: inline;
+    text-align: left;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.Radio
+{
+    display: none;  /*inline;*/
+    float: left;
+    width: 300px;
+    visibility: hidden;
+    margin-left: 0px;
+}
+    
+.rdoButton
+{
+    float: left;
+    direction: ltr;
+    margin-left: 25px;
+    display: inline;
+}
+
+.separator
+{
+     clear: both; 
+     height: 10px;
+}
+
+#send
+{
+    border: 1px solid #5CB85C;
+    float: left;
+    margin-left: 15px;
+    font-weight: bold;
+    width: 95px;
+    height: 30px;
+    background-color: #FFFFFF; /*#00BFFF changed juju*/
+    color: #5CB85C;
+    direction: ltr;
+}
+
+#rdoSSL, #rdoTLS
+{
+    margin-left: 10px;    
+}
+
+.login
+{
+    display: block;
+    visibility: hidden;     
+}
+
+.lblLogin, .subjTag, .messageTag
+{
+    float: left;
+    width: 95px;
+    direction: ltr;
+    margin-left: 10px;  
+     text-align: left; /*added juju*/
+}
+
+.txtLogin
+{
+    float: left;
+    margin-left: 10px;
+    width: 150px;
+    direction: ltr;
+}
+
+.lblEmailStatus
+{
+    float: left;
+    direction: ltr;
+    margin-left: 35px;
+    position: relative;
+    width: 550px;
+    color: #5cb85c;
+    font-size: small;
+    font-weight: bold;   
+}
+
+.subjText
+{
+    float: left;
+    direction: ltr;
+    margin-left: 10px;
+    position: relative;
+    width: 250px;    
+}
+
+.messageText
+{
+    float: left;
+    width: 505px;
+    direction: ltr;
+    position: relative;
+     margin-left: 10px;
+   /* top: 0px;
+    right: 0px;   juju*/
+}
+
+#reset
+{
+    border: 1px solid #999999;   /*juju*/
+    float: right;
+    margin-right: 10px;
+    width: 50px;
+    height: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top; /* middle;*/
+    padding: 0px;
+    color: #CC0000;   /*juju*/
+    background-color: #B3D9D9;  /*juju*/
+}
+
+#save
+{
+    border: 1px solid #999999;  /*juju*/
+    float: right;
+    margin-right: 15px;
+    width: 90px;
+    height: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top; /* middle;*/
+    padding: 0px;
+    color: #666666;  /*juju*/
+    background-color: #D2E4E4;  /*juju*/
+}
+
+#chkPreset
+{
+    float: left;
+    margin-right: 5px;
+    margin-left: 20px;
+    
+}
+
+#preset
+{
+    float: right;
+    width: 135px;
+    margin-right: 10px;
+    font-size: 12px;
+    vertical-align: bottom;
+    text-align: left;
+}
+
+.Path
+{
+    float: left;    
+    direction: ltr;
+    text-align: left;
+    font-size: 11px; /*smaller*/
+    display: block;
+    margin-left: 10px;  /*juju*/
+    
+}
+
+/* ============== added on 25/12/2013 for WCF service configuration settings section : ==========*/
+#WcfConfigPanel
+{
+
+}
+
+.WcfConfig
+{
+    border: 1px solid #999999;  /*medium solid Black; changed juju*/
+    border-radius: 3px;  /*added juju
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-right: 5px;   changed juju*/
+    width: 95%;
+    height: 90px;
+    margin-top: 0px;
+    font-size: small;
+    
+}
+
+#lblWCF
+{
+    font-size: 16px;
+    font-weight: bold;
+    float: right;
+    direction: rtl;
+    clear: both;
+    margin-right: 10px;
+    margin-top: 5px;
+    height:25px; /*juju*/
+}
+
+.WcfConfigLabel
+{
+    float: right;
+    direction: rtl;
+    width: 90px; /*50px;*/
+    margin-right: 5px;
+    font-size: medium;
+     height:25px; /*juju*/
+}
+
+.WcfConfigInput
+{
+    float: left;
+    direction: ltr;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    width: 590px;
+    vertical-align: middle;
+    text-align: left;
+    color: Blue;    /* OPTIONAL */
+}
+
+/* added on 26/04/2015 */
+.useWcfDiariesCounter
+{
+    float: right;
+    direction: rtl;
+    width: 115px;
+    margin-right: 5px;
+    font-size: medium;
+}
+/* ============== end addition for WCF service configuration settings section : =================*/
+/* ========== end added ====================== */
+
+/* INSERTED ON 11/02/2020 :   */
+.Nickname
+{
+    float: right;
+    width: 120px;
+    margin-right: 20px;
+    margin-left: 10px;
+    vertical-align: bottom;
+    text-align: left;
+}
+
+.emailNicknameLabel
+{
+    float: left;
+    direction: ltr;
+    width: 60px;
+    margin-left: 20px;
+    text-align: left;
+    display: block; 
+    position: relative;
+    /*clear: both;*/
+    /*top: 535px;
+    right: 279px;*/
+}
+
+.emailNicknameInput
+{
+    float: left;
+    direction: ltr;
+    margin-left: 10px;
+    width: 75px;
+    text-align: left;
+    display: block;
+    position: relative;
+    /*clear: both;*/
+    /*top: 535px;
+    right: 186px;*/
+}
+
+#lblNickname, #txtNickname {
+visibility: hidden;
+}
+
+#chkNickname
+{
+    position: relative;
+    direction: ltr;
+    margin-left: 5px;
+    float: left;
+    margin-right: 5px;
+}
+
+#txtDaysCount
+{    margin-right: 0px;
+     margin-left: 0px;
+     align-content: center;
+     text-align: center;
+     direction: ltr;            
+}
+/* END INSERTED ON 11/02/2020 */

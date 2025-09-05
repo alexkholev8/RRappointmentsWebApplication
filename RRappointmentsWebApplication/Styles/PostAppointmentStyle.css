@@ -1,0 +1,21 @@
+﻿body, td, th
+{
+	/*font-family: Arial, Helvetica, sans-serif;*/
+    font-size: 15px;
+    text-align: right;
+    color: #666666;     /*added juju*/
+}
+
+body  /*added juju*/
+{
+	background-image: url('../images/pages_bg.gif');
+	background-repeat: repeat-x;
+	background-color: #d4d4d4;     
+     height: 509px;
+    color: #666666;    
+}
+
+.style1
+        {
+            height: 253px;
+        }

@@ -1,0 +1,56 @@
+<setting name="RRappointmentsWebApplication_UserLoginWebReference_UserLogin"
+        serializeAs="String">
+        <value>http://192.168.0.200/WebServices/UserLogin.asmx</value>
+      </setting>
+      <setting name="RRappointmentsWebApplication_PasswordRecoveryWebReference_PasswordRecovery"
+        serializeAs="String">
+        <value>http://192.168.0.200/WebServices/PasswordRecovery.asmx</value>
+      </setting>
+      <setting name="RRappointmentsWebApplication_NewUserSignUpWebReference_NewUserSignUp"
+        serializeAs="String">
+        <value>http://192.168.0.200/WebServices/NewUserSignUp.asmx</value>
+      </setting>
+      <setting name="RRappointmentsWebApplication_AppointmentsWebReference_Appointments"
+        serializeAs="String">
+        <value>http://192.168.0.200/WebServices/Appointments.asmx</value>
+      </setting>
+      <setting name="RRappointmentsWebApplication_TreatmentInstructionWebReference_TreatmentInstruction"
+        serializeAs="String">
+        <value>http://192.168.0.200/WebServices/TreatmentInstruction.asmx</value>
+      </setting>
+      <setting name="RRappointmentsWebApplication_NewAppointmentWebReference_NewAppointment"
+        serializeAs="String">
+        <value>http://192.168.0.200/WebServices/NewAppointment.asmx</value>
+      </setting>
+      <setting name="RRappointmentsWebApplication_EmailSenderWebReference_EmailSender"
+        serializeAs="String">
+        <value>http://192.168.0.200/WebServices/EmailSender.asmx</value>
+      </setting>
+      <setting name="RRappointmentsWebApplication_PasswordRecoveryLocalWebReference_PasswordRecovery"
+        serializeAs="String">
+        <value>http://localhost/Site/WebServices/PasswordRecovery.asmx</value>
+      </setting>
+      <setting name="RRappointmentsWebApplication_NewUserSignUpLocalWebReference_NewUserSignUp"
+        serializeAs="String">
+        <value>http://localhost/Site/WebServices/NewUserSignUp.asmx</value>
+      </setting>
+      <setting name="RRappointmentsWebApplication_AppointmentsLocalWebReference_Appointments"
+        serializeAs="String">
+        <value>http://localhost/Site/WebServices/Appointments.asmx</value>
+      </setting>
+      <setting name="RRappointmentsWebApplication_TreatmentInstructionLocalWebReference_TreatmentInstruction"
+        serializeAs="String">
+        <value>http://localhost/Site/WebServices/TreatmentInstruction.asmx</value>
+      </setting>
+      <setting name="RRappointmentsWebApplication_UserLoginLocalWebReference_UserLogin"
+        serializeAs="String">
+        <value>http://localhost/Site/WebServices/UserLogin.asmx</value>
+      </setting>
+      <setting name="RRappointmentsWebApplication_NewAppointmentLocalWebReference_NewAppointment"
+        serializeAs="String">
+        <value>http://localhost/Site/WebServices/NewAppointment.asmx</value>
+      </setting>
+      <setting name="RRappointmentsWebApplication_EmailSenderLocalWebReference_EmailSender"
+        serializeAs="String">
+        <value>http://localhost/Site/WebServices/EmailSender.asmx</value>
+      </setting>

@@ -1,0 +1,109 @@
+﻿body, td, th {
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	direction: rtl;
+}
+
+body
+{
+    background-image: url('../images/pages_bg.gif');
+	background-repeat: repeat-x;
+	background-color: #d4d4d4;       /*EDEDED  changed juju*/
+    height: 389px;
+    color: #666666;     /*added juju*/
+}
+
+.pages_inner_frame_large
+{
+    border-style: solid;
+   /* font-weight: bolder;   juju*/
+    font-size: small;
+}
+
+.pages_inner_frame_large #ltr
+{
+    direction: ltr;
+}
+
+table
+{
+    border: 1px solid #999999; /* dotted;   changed juju*/
+    border-radius: 3px; /*added juju*/
+    height: 170px;
+    font-size: medium;
+    width: 334px;
+    background-color: #e4e6e7; /*C1CCFF B3D9D9changed juju*/ /*margin-left:260px;  added juju*/
+}
+
+/*a:link
+{
+	text-decoration: none;	
+	color: #315781;
+}
+
+a:visited 
+{
+	text-decoration: none;
+	color: #315781;
+}
+
+a:hover 
+{
+	text-decoration: none;
+	color: #00F;
+}
+
+a:active 
+{
+	text-decoration: none;
+	color: #00F;
+}*/
+
+/*---------------------------------start  juju--------------------------
+a:link, a:visited
+{
+    color: #006666; 
+}
+a:hover, a:active
+{
+    color: #009999; 
+}
+-------------------------end   juju--------------------width: 300px;---------*/
+    
+.style1
+{
+    height: 27px;  /*24px  changed juju*/
+}
+
+.style2
+{
+    height: 27px;   /*24px changed  juju*/
+    width: auto; 
+    font-weight:bold;
+    
+}
+.tip  /*added juju*/
+{
+   margin-right:100px; 
+   /*font-weight: bold;*/
+   font-size:medium;
+   color: black;
+}
+.arrow   /*added juju*/
+{
+    margin-left: 25px;
+    right: auto;
+    float: left;
+    height: 200px;
+}
+
+.end_button   /*added juju*/
+{
+	margin-left: 0px;
+    left: 270px;
+    float: left;
+}
+.steps   /*added juju*/
+{
+    float: right;
+    
+}

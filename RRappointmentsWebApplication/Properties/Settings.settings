@@ -1,0 +1,66 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RRappointmentsWebApplication.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WebServicePort" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">:80</Value>
+    </Setting>
+    <Setting Name="WebServiceIP" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">192.168.0.200</Value>
+    </Setting>
+    <Setting Name="WebServiceLocation" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="WebServiceDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">WebServices/</Value>
+    </Setting>
+    <Setting Name="WebServiceSyncMode" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="RRappointmentsWebApplication_AppointmentsWebReference_Appointments" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.201:5555/WebServices/Appointments.asmx</Value>
+    </Setting>
+    <Setting Name="UseWcfDiariesCounterService" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="RRappointmentsWebApplication_UserLoginWebReference_UserLogin" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.200:5555/WebServices/UserLogin.asmx</Value>
+    </Setting>
+    <Setting Name="RRappointmentsWebApplication_PasswordRecoveryWebReference_PasswordRecovery" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.200:5555/WebServices/PasswordRecovery.asmx</Value>
+    </Setting>
+    <Setting Name="RRappointmentsWebApplication_NewUserSignUpWebReference_NewUserSignUp" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.200:5555/WebServices/NewUserSignUp.asmx</Value>
+    </Setting>
+    <Setting Name="RRappointmentsWebApplication_TreatmentInstructionWebReference_TreatmentInstruction" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.200:5555/WebServices/TreatmentInstruction.asmx</Value>
+    </Setting>
+    <Setting Name="RRappointmentsWebApplication_NewAppointmentWebReference_NewAppointment" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.200:5555/WebServices/NewAppointment.asmx</Value>
+    </Setting>
+    <Setting Name="RRappointmentsWebApplication_EmailSenderWebReference_EmailSender" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.201:5555/WebServices/EmailSender.asmx</Value>
+    </Setting>
+    <Setting Name="RRappointmentsWebApplication_PasswordRecoveryLocalWebReference_PasswordRecovery" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2417/WebServices/PasswordRecovery.asmx</Value>
+    </Setting>
+    <Setting Name="RRappointmentsWebApplication_NewUserSignUpLocalWebReference_NewUserSignUp" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2417/WebServices/NewUserSignUp.asmx</Value>
+    </Setting>
+    <Setting Name="RRappointmentsWebApplication_AppointmentsLocalWebReference_Appointments" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2417/WebServices/Appointments.asmx</Value>
+    </Setting>
+    <Setting Name="RRappointmentsWebApplication_TreatmentInstructionLocalWebReference_TreatmentInstruction" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2417/WebServices/TreatmentInstruction.asmx</Value>
+    </Setting>
+    <Setting Name="RRappointmentsWebApplication_UserLoginLocalWebReference_UserLogin" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2417/WebServices/UserLogin.asmx</Value>
+    </Setting>
+    <Setting Name="RRappointmentsWebApplication_NewAppointmentLocalWebReference_NewAppointment" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2417/WebServices/NewAppointment.asmx</Value>
+    </Setting>
+    <Setting Name="RRappointmentsWebApplication_EmailSenderLocalWebReference_EmailSender" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:2417/WebServices/EmailSender.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

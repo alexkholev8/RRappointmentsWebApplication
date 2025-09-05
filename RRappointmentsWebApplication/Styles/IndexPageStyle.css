@@ -1,0 +1,13 @@
+﻿body, td, th
+{
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-size: 15px;
+    color: #666666; /*added juju*/
+}
+
+#pageiframe
+{
+    /*height: 413px;*/
+    height: 100%; /* 10/10/2013 789px;*/
+    width: 100%;   /* 789px;  changed juju*/
+}

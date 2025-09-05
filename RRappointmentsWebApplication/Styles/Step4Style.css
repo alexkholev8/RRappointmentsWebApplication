@@ -1,0 +1,207 @@
+﻿body,td,th
+{
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	direction:rtl
+}
+body 
+{
+	background-image: url('../images/pages_bg.gif');
+	background-repeat: repeat-x;
+	background-color: #d4d4d4;       /*EDEDED  changed juju*/
+    height: 509px;
+    color: #666666;     /*added juju*/
+}
+
+/*a:link 
+{
+	color: #315781;
+	text-decoration: none;
+}
+
+a:visited 
+{
+	text-decoration: none;
+	color: #315781;
+}
+a:hover 
+{
+	text-decoration: none;
+	color: #00F;
+}
+
+a:active 
+{
+	text-decoration: none;
+	color: #00F;
+}*/
+/*---------------------------------start  juju---------------------------
+a:link, a:visited
+{
+    color: #006666; 
+}
+a:hover, a:active
+{
+    color: #009999; 
+}
+-------------------------end   juju-----------------------------*/
+.style1
+{
+    height: 27px;
+}
+    
+.style2
+{
+    height: 27px; /*28px changed  juju*/
+    width: auto;    /*added juju*/
+    font-weight:bold;
+}
+
+.style3
+{
+    width: 300px; /*394px;*/
+}
+
+.style4
+{
+    height: 32px;
+    text-align: center;
+}
+ .style5
+{
+    width: 400px;
+    height: 29px;
+}
+
+#form1
+{
+    height: 472px;
+}
+
+#pagesInnerFrameLargerPanel #ltr
+{
+    direction: ltr;
+}
+
+#tblContent
+{
+    border: 1px solid #999999;/* FFCC00  dashed;   changed juju*/
+    border-radius: 3px;   /*added juju*/
+    height: 118px; 
+    font-size: medium; 
+    width: 334px;
+    background-color: #e4e6e7;  /*C1CCFF B3D9D9  changed juju*/
+    margin-right: 25px; /*added juju*/
+    display: inline-table;
+    float: right;
+}
+
+#tblInstruction
+{
+    width: 100%;    
+}
+
+#tblActions
+{
+    width: 100%; 
+    height: 19px;
+}
+
+#back
+{
+    margin-right: 15px;
+}
+
+#End
+{
+    float: none;
+    margin-right: 15px;
+}
+
+#print
+{
+    margin-right: -50px;
+    float: none;
+}
+
+.separator
+{
+     clear: both; 
+     height: 20px;
+}
+
+#treatmentInstructionsTextBox
+{
+    font-weight: bold; 
+}
+
+.next_button
+{
+    float: left;
+    margin-left: 15px;
+        
+}
+
+.fin_message
+{
+    font-weight: bold;
+    width: 575px; /*550px;*/
+    height: 82px;
+    margin-right: 10px;
+}
+
+
+.fin_message #finalRedMessage
+{ 
+    color: #CC0000; /*Red    changed juju*/
+    padding-right: 5px;
+    padding-top: 5px;
+    text-align: right;  
+ }
+
+.fin_message #finalBlueMessage
+{ 
+    color: blue;
+    padding-right: 5px;
+    padding-top: 5px;
+    text-align: right;     
+ }
+
+.fin_message #finalBlackMessage
+{ 
+    color: black;
+    padding-right: 5px;
+    padding-top: 5px;  
+ }
+
+.fin_message #finalMessage
+{
+    padding-right: 5px;
+    padding-top: 5px;
+    display: none;  /*text commented*/
+}
+
+.steps
+{
+    direction: rtl;
+    font-weight: bold;
+}
+
+#WcfWarning
+{
+    /*left: 0px;*/
+    direction: ltr;
+    text-align: left;
+    vertical-align: middle;
+    width: auto;
+}
+
+.arrow   /*added juju*/
+{
+    display: block;
+    margin-left: 25px;
+    right: auto;
+    float: left;
+    height: 200px;
+    clear: both;
+    /*width: 225px;*/
+}

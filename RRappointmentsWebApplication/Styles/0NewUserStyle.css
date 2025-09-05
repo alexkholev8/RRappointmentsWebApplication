@@ -1,0 +1,195 @@
+﻿body, td, th 
+{
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	direction: rtl;
+}
+
+body 
+{
+	background-image: url('../images/pages_bg.gif');
+	background-repeat: repeat-x;
+	background-color: #EDEDED;
+    width: 756px;
+    height: 363px;
+}
+
+.style5
+{
+    width: 25px;
+}
+    
+.captchTextBoxStyle
+{
+    direction: ltr;
+}
+
+.emailTextBoxStyle
+{
+    direction: ltr;
+}
+
+.waterMarkStyle
+{
+    color: Red;
+    border-color: Black;   
+}
+
+.style7
+{
+    width: 260px;
+}
+
+.style8
+{
+
+}
+
+.style16
+{
+    width: 49px;
+}
+
+.style22
+{
+    height: 12px;
+}
+
+.style23
+{
+    width: 167px;
+}
+
+.style27
+{
+    width: 289px;
+    height: 22px;
+}
+
+.style28
+{
+    height: 22px;
+}
+
+.style29
+{
+    width: 289px;
+    text-align: left;
+}
+
+.style30
+{
+    height: 22px;
+    width: 135px;
+}
+
+#form1
+{
+    height: 296px;
+    width: 753px;
+    direction: rtl;
+}
+
+.style31
+{
+    height: 39px;
+}
+
+.style32
+{
+    width: 167px;
+    height: 39px;
+}
+
+.style33
+{
+    width: 25px;
+    height: 39px;
+}
+
+.style34
+{
+    width: 260px;
+    height: 39px;
+}
+
+.style35
+{
+    height: 27px;
+}
+
+#smsAgreementCheckBox
+{
+    width: 20px;
+}
+
+.pages_inner_frame_large #ltr
+{
+    direction: ltr; 
+    height: 13px;    
+}
+
+#table1
+{
+    width: 659px; 
+    height: 202px; 
+    margin-top: 0px;    
+}
+
+#table1 #innerTable
+{
+    width: 100%;
+}
+
+#table2
+{
+    width: 53%; 
+    height: 54px;
+}
+
+#table3
+{
+    height: 65px;
+}
+
+#submitSignUp
+{
+    text-align: left;
+}
+
+#table3 #helpPopupTitleCell
+{
+    font-size: medium; 
+    font-weight: bold;
+}
+
+#table3 #helpPopupContentCell
+{
+    font-size: small; 
+    font-weight: bold;
+}
+
+#table3 .style22 a
+{
+    border-style: none; 
+    padding: inherit; 
+    font-weight: bold; 
+    color: #FFFF00; 
+    text-decoration: blink;
+}
+
+#signUpErrorLabel /* added */
+{
+    width: 225px;    
+}
+
+.popupUnblock
+{
+    font-weight: bold; 
+    color: Red;
+    direction: rtl;
+    float: right;
+    vertical-align: middle;
+    text-align: right;
+    display: inline;
+    visibility: hidden;
+}
