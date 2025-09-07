@@ -1,8 +1,8 @@
-From:=alex@rrsystems.co.il
+From:=
 Smtp:=outlook.office365.com
 Port:=587
 SSL:=1
-UserName:=alex@rrsystems.co.il
-Password:=Al112233
+UserName:=
+Password:=
 Use Nickname:=1
 Nickname:=Medsoft
